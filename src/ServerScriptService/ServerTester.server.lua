@@ -1,0 +1,20 @@
+local RP = game:GetService("ReplicatedStorage")
+local mathUtil = require(RP.MathUtil)
+local stringUtil = require(RP.StringUtil)
+local playerUtil = require(RP.PlayersUtil)
+
+print(mathUtil.Sum(5,4,23))
+print(mathUtil.Multiply(5,4,23))
+print(mathUtil.Minus(5,4,23))
+print(mathUtil.Divide(5,4))
+print(mathUtil.Square(8,3))
+print(mathUtil.Mod(5,4))
+
+print(stringUtil.ToUpperCase("batata"))
+print(stringUtil.ToLowerCase("BATATA"))
+print(stringUtil.GetLenght("Batata"))
+print(stringUtil.Trim("    B  atata     "))
+
+wait(10)
+print(playerUtil.GetFriendsInServer(1))
+print(playerUtil.GetPlayersQuantity())
